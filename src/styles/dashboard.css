@@ -1,0 +1,65 @@
+.dashboard-container {
+  margin-top: 60px;
+}
+
+.discord-link {
+  text-decoration: none;
+  color: #5B29A3;
+}
+
+h2, p {
+  color: #2D006B;
+}
+
+h3, h5, h6 {
+  color: #2D006B;
+}
+
+h5 {
+  font-weight: bold;
+}
+
+h6 {
+  font-weight: bold;
+}
+
+.view-full-report-btn {
+  color: #5B29A3;
+  border: 1px solid #5B29A3;
+}
+
+.view-full-report-btn:hover {
+  background-color: #5B29A3;
+  color: white;
+}
+
+.premium-resource {
+  color: #2D006B;
+}
+
+.premium-resource-toogler {
+  color: #5B29A3;
+  font-size: 1.2rem;
+}
+
+.sdk-list li a {
+  color: #5B29A3;
+}
+
+.claim-btn {
+  background-color: #5B29A3;
+  color: white;
+}
+
+.claim-btn:hover {
+  background-color: #5B29A3;
+  opacity: 0.9;
+  color: white;
+}
+
+
+@media(min-width: 991px) {
+  .dashboard-container {
+    margin-top: 80px;
+  }
+}
