@@ -1,0 +1,60 @@
+.homepage-container .hero-text {
+  font-size: 4rem;
+  color: #2D006B;
+}
+
+.sub-hero-text {
+  font-size: 1.3rem;
+}
+
+.connect-wallet-btn {
+  background-color: #2D006B;
+}
+
+/* footer */
+.footer {
+  background: #fff;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.footer-links {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+  color: #000;
+}
+
+/* Apply a divider after every link except the last one */
+.footer-links span:not(:last-child) {
+  position: relative;
+  padding-right: 1rem;   /* space before the divider */
+  margin-right: 1rem;    /* space after the divider */
+}
+
+.footer-links span:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 1em;           /* roughly the height of the text */
+  background: #ccc;
+}
+
+.motion-element {
+  will-change: transform, opacity;
+}
+
+@media(min-width: 991px) {
+  .homepage-container {
+    margin-top: 100px !important;
+  }
+}
+
+@media(min-width: 800px) {
+  .footer-links {
+    font-size: 1.1rem;
+  }
+}

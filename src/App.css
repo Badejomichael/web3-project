@@ -1,0 +1,266 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar-container {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+}
+
+.navbar-container.container{
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+ }
+
+.nav-item .nav-link:hover {
+  color: #2D006B;
+  transition: 0.05s ease-out;
+}
+
+.navbar-linkss {
+  margin-top: 20px;
+  list-style: none;
+}
+
+.navbar-linkss a {
+  text-decoration: none;
+  color: #2D006B;
+}
+
+.Hero-logo {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+.monad-logo {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.connect-wallet-btn {
+  background-color: #2D006B;
+  color: white;
+}
+
+.connect-wallet-btn:hover {
+  background-color: #2D006B;
+  color: white;
+  opacity: 0.9;
+}
+
+.active {
+  font-weight: bold;
+  color: #2D006B;
+  border-bottom: 2px solid #2D006B;
+}
+
+
+
+.mobile-toggle {
+  background: transparent;
+  border: 2px solid purple;
+  padding: 15px 8px;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  color: purple;
+  z-index: 1001;
+}
+
+.mobile-toggle.open {
+  border: none;
+  color: #2D006B;
+}
+
+.hamburger-icon {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #2D006B;
+  position: relative;
+  transition: background 0.3s ease;
+}
+
+.hamburger-icon::before,
+.hamburger-icon::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background: #2D006B;
+  left: 0;
+  transition: transform 0.3s ease, top 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger-icon::before {
+  top: -7px;
+}
+
+.hamburger-icon::after {
+  top: 7px;
+}
+
+/* When sidebar is open - animate into X */
+.mobile-toggle.open .hamburger-icon {
+  background: transparent;
+}
+
+.mobile-toggle.open .hamburger-icon::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.mobile-toggle.open .hamburger-icon::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.close-btn {
+  position: relative;
+  width: 30px;
+  height: 24px;
+  font-weight: bold;
+  display: block;
+}
+
+.close-btn::before,
+.close-btn::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: #2D006B;
+  top: 50px;
+  left: 0;
+  transform-origin: center;
+}
+
+.close-icon::before {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.close-icon::after {
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 75%;
+  height: 100%;
+  background: white;
+  padding: 2rem;
+  z-index: 999;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-links {
+  list-style: none;
+  padding: 0;
+}
+
+
+.sidebar-links li {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.sidebar-links a {
+  color: #333;
+  text-decoration: none;
+}
+
+.mobile-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(6px);
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 998;
+}
+
+footer {
+  background-color: #5B29A3;
+}
+
+footer div small {
+  color: white;
+}
+
+footer small a {
+  color: white;
+  text-decoration: none;
+}
+
+footer small a:hover {
+  text-decoration: underline;
+}
+
+
+@media(max-width: 991px) {
+  .navbar-linkss {
+  margin-top: 0;
+  }
+
+  .navbar-toggler {
+    border-color: #2D006B;
+  }
+
+  .navbar-toggler {
+    color: #2D006B;
+  }
+
+  .navbar-container.container{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 1.5rem;
+  }
+
+  .sub-hero-text {
+    font-size: 1rem;
+  }
+
+  .content-card {
+    margin-bottom: 1rem;
+  }
+}
+
+
+.content-card button {
+  background: #5B29A3;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.content-card button:hover {
+  background: #431F7A;
+}
+
+
+
